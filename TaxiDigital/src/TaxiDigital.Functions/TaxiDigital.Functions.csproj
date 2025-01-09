@@ -21,6 +21,10 @@
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.21.0" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\TaxiDigital.Application\TaxiDigital.Application.csproj" />
+    <ProjectReference Include="..\TaxiDigital.Infrastructure\TaxiDigital.Infrastructure.csproj" />
+  </ItemGroup>
+  <ItemGroup>
     <None Update="host.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>

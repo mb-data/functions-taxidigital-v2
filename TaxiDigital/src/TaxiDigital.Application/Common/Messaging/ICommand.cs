@@ -1,7 +1,7 @@
 ﻿using MediatR;
 using TaxiDigital.SharedKernel;
 
-namespace TaxiDigital.Application.Messaging;
+namespace TaxiDigital.Application.Common.Messaging;
 
 public interface ICommand : IRequest<Result>, IBaseCommand;
 

@@ -1,6 +1,6 @@
-﻿using TaxiDigital.Application.Messaging;
+﻿using TaxiDigital.Application.Common.Messaging;
 
-namespace TaxiDigital.Application.Caching;
+namespace TaxiDigital.Application.Common.Caching;
 
 public interface ICachedQuery<TResponse> : IQuery<TResponse>, ICachedQuery;
 

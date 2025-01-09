@@ -1,4 +1,4 @@
-﻿namespace TaxiDigital.Application.Caching;
+﻿namespace TaxiDigital.Application.Common.Caching;
 
 public interface ICacheService
 {

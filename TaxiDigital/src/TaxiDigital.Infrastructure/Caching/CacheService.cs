@@ -1,7 +1,7 @@
 ﻿using Microsoft.Extensions.Caching.Distributed;
 using System.Buffers;
 using System.Text.Json;
-using TaxiDigital.Application.Caching;
+using TaxiDigital.Application.Common.Caching;
 
 namespace TaxiDigital.Infrastructure.Caching;
 
