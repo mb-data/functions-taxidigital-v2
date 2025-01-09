@@ -1,0 +1,46 @@
+# .NET
+bin/
+obj/
+*.exe
+*.dll
+*.pdb
+*.cache
+*.xml
+*.nuspec
+*.nupkg
+*.ps1
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# Azure Functions
+local.settings.json
+# Uncomment below if you're using VS Code settings for Azure Functions
+# .vscode/
+
+# Visual Studio
+.vs/
+.vscode/
+.vscode-test/
+.vscode-server/
+.vscode-test-insiders/
+.vscode-insiders/
+.vscode-stable/
+.vscode-web/
+
+# Rider
+.idea/
+
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Azure Functions Build Artifacts
+publish/
+.swa/
+
+# Azure Pipelines
+**/.azure-pipelines/

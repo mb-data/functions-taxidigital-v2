@@ -1,0 +1,15 @@
+{
+  "profiles": {
+    "TaxiDigital.Functions": {
+      "commandName": "Project",
+      "commandLineArgs": "--port 7184"
+    },
+    "Container (Dockerfile)": {
+      "commandName": "Docker",
+      "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}",
+      "containerRunArguments": "--init",
+      "httpPort": 31971,
+      "useSSL": false
+    }
+  }
+}
