@@ -9,6 +9,14 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{7AC71183
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaxiDigital.Functions", "src\TaxiDigital.Functions\TaxiDigital.Functions.csproj", "{CCEB982B-D695-41ED-A79F-9757F173E21D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaxiDigital.Domain", "src\TaxiDigital.Domain\TaxiDigital.Domain.csproj", "{3BEF0974-7973-4A6D-81D9-75EE9294BD39}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaxiDigital.Application", "src\TaxiDigital.Application\TaxiDigital.Application.csproj", "{10BBFCDA-1A75-424A-9DDE-5F79E3D9841E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaxiDigital.Infrastructure", "src\TaxiDigital.Infrastructure\TaxiDigital.Infrastructure.csproj", "{4CA6E866-ABC4-42F1-B660-79D469B3CF52}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaxiDigital.SharedKernel", "src\TaxiDigital.SharedKernel\TaxiDigital.SharedKernel.csproj", "{B9F85D11-BC52-46D0-81A6-B424B3601E36}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,11 +27,31 @@ Global
 		{CCEB982B-D695-41ED-A79F-9757F173E21D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CCEB982B-D695-41ED-A79F-9757F173E21D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CCEB982B-D695-41ED-A79F-9757F173E21D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3BEF0974-7973-4A6D-81D9-75EE9294BD39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3BEF0974-7973-4A6D-81D9-75EE9294BD39}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3BEF0974-7973-4A6D-81D9-75EE9294BD39}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3BEF0974-7973-4A6D-81D9-75EE9294BD39}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10BBFCDA-1A75-424A-9DDE-5F79E3D9841E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10BBFCDA-1A75-424A-9DDE-5F79E3D9841E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10BBFCDA-1A75-424A-9DDE-5F79E3D9841E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10BBFCDA-1A75-424A-9DDE-5F79E3D9841E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4CA6E866-ABC4-42F1-B660-79D469B3CF52}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4CA6E866-ABC4-42F1-B660-79D469B3CF52}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4CA6E866-ABC4-42F1-B660-79D469B3CF52}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4CA6E866-ABC4-42F1-B660-79D469B3CF52}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9F85D11-BC52-46D0-81A6-B424B3601E36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9F85D11-BC52-46D0-81A6-B424B3601E36}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9F85D11-BC52-46D0-81A6-B424B3601E36}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9F85D11-BC52-46D0-81A6-B424B3601E36}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{CCEB982B-D695-41ED-A79F-9757F173E21D} = {FEC9E6DB-0A49-407F-9E54-151D926FDC74}
+		{3BEF0974-7973-4A6D-81D9-75EE9294BD39} = {FEC9E6DB-0A49-407F-9E54-151D926FDC74}
+		{10BBFCDA-1A75-424A-9DDE-5F79E3D9841E} = {FEC9E6DB-0A49-407F-9E54-151D926FDC74}
+		{4CA6E866-ABC4-42F1-B660-79D469B3CF52} = {FEC9E6DB-0A49-407F-9E54-151D926FDC74}
+		{B9F85D11-BC52-46D0-81A6-B424B3601E36} = {FEC9E6DB-0A49-407F-9E54-151D926FDC74}
 	EndGlobalSection
 EndGlobal
