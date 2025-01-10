@@ -14,6 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\TaxiDigital.Domain\TaxiDigital.Domain.csproj" />
     <ProjectReference Include="..\TaxiDigital.SharedKernel\TaxiDigital.SharedKernel.csproj" />
   </ItemGroup>
 
