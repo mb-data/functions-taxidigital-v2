@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaxiDigital.Infrastructure"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaxiDigital.SharedKernel", "src\TaxiDigital.SharedKernel\TaxiDigital.SharedKernel.csproj", "{B9F85D11-BC52-46D0-81A6-B424B3601E36}"
 EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{560AA3B0-8C21-4E95-8F08-5CA0E15FF402}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -43,6 +45,10 @@ Global
 		{B9F85D11-BC52-46D0-81A6-B424B3601E36}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B9F85D11-BC52-46D0-81A6-B424B3601E36}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B9F85D11-BC52-46D0-81A6-B424B3601E36}.Release|Any CPU.Build.0 = Release|Any CPU
+		{560AA3B0-8C21-4E95-8F08-5CA0E15FF402}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{560AA3B0-8C21-4E95-8F08-5CA0E15FF402}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{560AA3B0-8C21-4E95-8F08-5CA0E15FF402}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{560AA3B0-8C21-4E95-8F08-5CA0E15FF402}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
