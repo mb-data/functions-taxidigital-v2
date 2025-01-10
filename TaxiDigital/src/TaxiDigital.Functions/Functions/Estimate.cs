@@ -9,7 +9,7 @@ using TaxiDigital.Functions.Messages;
 
 namespace TaxiDigital.Functions.Functions;
 
-public class Estimate(ILogger<Estimate> logger, , ISender sender)
+public class Estimate(ILogger<Estimate> logger, ISender sender)
 {
     private readonly ILogger<Estimate> _logger = logger ?? throw new ArgumentNullException(nameof(logger));
     private readonly ISender _sender = sender ?? throw new ArgumentNullException(nameof(sender));
