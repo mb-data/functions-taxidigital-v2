@@ -1,0 +1,4 @@
+services:
+  taxidigital.functions:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
