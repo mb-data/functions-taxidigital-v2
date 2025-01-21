@@ -24,6 +24,21 @@ public static class DependencyInjection
                 .ConfigureHttpClient(httpClient => httpClient.BaseAddress = new Uri(Environment.GetEnvironmentVariable("wdriverdataapi")))
                 .AddHttpMessageHandler<AddBearerTokenHeader>();
 
+        services
+                .AddRefitClient<IExpoDataApi>()
+                .ConfigureHttpClient(client => client.DefaultRequestHeaders.Accept.Clear())
+                .ConfigureHttpClient(client => client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json")))
+                .ConfigureHttpClient(client => client.DefaultRequestHeaders.Add("accept", "application/json"))
+                .ConfigureHttpClient(httpClient => httpClient.BaseAddress = new Uri(Environment.GetEnvironmentVariable("wexpodataapi")))
+                .AddHttpMessageHandler<AddBearerTokenHeader>();
+
+        services
+                .AddRefitClient<ITaxiDigitalApi>()
+                .ConfigureHttpClient(client => client.DefaultRequestHeaders.Accept.Clear())
+                .ConfigureHttpClient(client => client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json")))
+                .ConfigureHttpClient(client => client.DefaultRequestHeaders.Add("accept", "application/json"))
+                .ConfigureHttpClient(httpClient => httpClient.BaseAddress = new Uri(Environment.GetEnvironmentVariable("TaxiDigitalURL")));
+
         return services;
     }
 }

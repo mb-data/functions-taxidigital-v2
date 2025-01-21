@@ -8,6 +8,16 @@ namespace TaxiDigital.Infrastructure.APIs;
 [Headers("Authorization: Bearer")]
 internal interface IDriverDataApi
 {
+    #region api/Product
+
+    [Get("/api/Product/Filter")]
+    Task<ApiResult<List<ProductResult>>> FilterPoduct([Query] int ProviderID);
+
+    [Post("/api/Product")]
+    Task<ApiResult<ProductResult>> PostProduct([Body] ProductRequest request);
+
+    #endregion
+
     #region api/Provider
 
     [Get("/api/Provider")]

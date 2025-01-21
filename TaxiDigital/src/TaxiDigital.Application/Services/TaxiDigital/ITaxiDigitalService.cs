@@ -5,14 +5,13 @@ using TaxiDigital.Domain.Estimate.Results;
 using TaxiDigital.Domain.Ride.Requests;
 using TaxiDigital.Domain.Ride.Results;
 
-namespace TaxiDigital.Application.Services.TaxiDigital
+namespace TaxiDigital.Application.Services.TaxiDigital;
+
+public interface ITaxiDigitalService
 {
-    internal interface ITaxiDigitalService
-    {
-        Task<EstimateResult> EstimateTaxiDigital(EstimateRequest request, string TaxiDigitalToken);
-        Task<CreateAuthorizedResult> CreateAuthorized(AuthorizedRequest request, string TaxiDigitalToken);
-        Task<BookRideResult> BookRide(BookRideRequest request, string TaxiDigitalToken);
-        Task<CancelRideResult> CancelRide(CancelRideRequest request, string TaxiDigitalToken);
-        Task<RideDetailsResult> RideDetails(RideDetailsRequest request, string TaxiDigitalToken);
-    }
+    Task<EstimateResult> EstimateTaxiDigital(EstimateRequest request, string TaxiDigitalToken);
+    Task<CreateAuthorizedResult> CreateAuthorized(AuthorizedRequest request, string TaxiDigitalToken);
+    Task<BookRideResult> BookRide(BookRideRequest request, string TaxiDigitalToken);
+    Task<CancelRideResult> CancelRide(CancelRideRequest request, string TaxiDigitalToken);
+    Task<RideDetailsResult> RideDetails(RideDetailsRequest request, string TaxiDigitalToken);
 }

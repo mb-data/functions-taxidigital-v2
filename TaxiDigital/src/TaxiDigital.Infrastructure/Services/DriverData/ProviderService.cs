@@ -1,17 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using TaxiDigital.Application.Services.DriverData;
+﻿using TaxiDigital.Application.Services.DriverData;
 using TaxiDigital.Domain.Driver.Results;
+using TaxiDigital.Infrastructure.APIs;
 
 namespace TaxiDigital.Infrastructure.Services.DriverData;
 
-internal sealed class ProviderService : IProviderService
+internal sealed class ProviderService(IDriverDataApi driverDataApi) : IProviderService
 {
-    public Task<List<ProviderResult>> Get(int? integrationId, int? providerId)
+    private readonly IDriverDataApi _driverDataApi = driverDataApi ?? throw new ArgumentNullException(nameof(driverDataApi));
+
+    public async Task<List<ProviderResult>> Get(int? integrationId, int? providerId)
     {
-        throw new NotImplementedException();
+        var response = await _driverDataApi.Get(integrationId, providerId);
+        return response.Result;
     }
 }
