@@ -102,6 +102,7 @@ internal sealed class EstimateQueueCommandHandler(
         {
             _logger.LogError(ex, "EstimateQueueCommandHandler");
             await _rideService.UpdateFunctionLog(request.RideID, JsonSerializer.Serialize(ex).ToString(), request.ProviderID);
+
             return Result.Failure(new Error("EstimateQueueCommandHandler", ex.Message, ErrorType.Failure));
         }
     }

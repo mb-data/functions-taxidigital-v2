@@ -1,6 +1,8 @@
 ﻿using Refit;
 using TaxiDigital.Domain.Driver.Requests;
 using TaxiDigital.Domain.Driver.Results;
+using TaxiDigital.Domain.User.Requests;
+using TaxiDigital.Domain.User.Results;
 using TaxiDigital.SharedKernel;
 
 namespace TaxiDigital.Infrastructure.APIs;
@@ -53,6 +55,13 @@ internal interface IDriverDataApi
 
     [Put("/api/Ride/{id}/Function/{functionId}")]
     Task<ApiResult<RideEstimativeResult>> PutFunction(int id, int functionId, [Body] RideProviderFunctionRequest request);
+
+    #endregion
+
+    #region api/User
+
+    [Post("/api/User/{UserID}/Configuration")]
+    Task<ApiResult<UserProviderConfigurationResult>> PostUserConfiguration(string UserID, [Body] UserProviderConfigurationRequest request);
 
     #endregion
 }
