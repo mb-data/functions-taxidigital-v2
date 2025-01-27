@@ -1,11 +1,6 @@
 ﻿using Microsoft.Extensions.Logging;
-using System;
-using System.Collections.Generic;
 using System.Globalization;
-using System.Linq;
-using System.Text;
 using System.Text.Json;
-using System.Threading.Tasks;
 using TaxiDigital.Application.Common.Messaging;
 using TaxiDigital.Application.Services.DriverData;
 using TaxiDigital.Application.Services.DriverLog;
@@ -143,9 +138,9 @@ internal sealed class OpenRideCommandHandler(
             BookRideResult bookRideResult = await _taxiDigitalService.BookRide(bookRideRequest, companyToken);
             _logger.LogInformation($"OpenRide - {ride.RideID} : {JsonSerializer.Serialize(bookRideResult)}");
 
-            RideResult rideResult = await _rideService.Put(request.RideId, new RideRequest(5,selectedEstimative.Product.ProviderID, bookRideResult.data.ToString()));
+            RideResult rideResult = await _rideService.Put(request.RideId, new RideRequest(5, selectedEstimative.Product.ProviderID, bookRideResult.data.ToString()));
             _logger.LogInformation($"RideResult: {JsonSerializer.Serialize(rideResult)}");
-            
+
             await _rideService.UpdateFunctionLog(request.RideId, null, providerId);
 
             return Result.Success();
