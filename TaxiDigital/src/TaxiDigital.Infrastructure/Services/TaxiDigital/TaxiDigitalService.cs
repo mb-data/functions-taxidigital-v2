@@ -42,4 +42,10 @@ internal sealed class TaxiDigitalService(ITaxiDigitalApi taxiDigitalApi) : ITaxi
         var response = await _taxiDigitalApi.RideDetails(request, TaxiDigitalToken);
         return response.Result;
     }
+
+    public async Task<RideInfoResult> RideInfo(RideInfoRequest request, string TaxiDigitalToken)
+    {
+        var response = await _taxiDigitalApi.RideInfo(request, TaxiDigitalToken);
+        return response.Result;
+    }
 }
