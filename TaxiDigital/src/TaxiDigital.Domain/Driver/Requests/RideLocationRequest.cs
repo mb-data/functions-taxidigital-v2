@@ -5,10 +5,10 @@ namespace TaxiDigital.Domain.Driver.Requests;
 public sealed class RideLocationRequest
 {
     [Required]
-    public string Lat { get; set; }
+    public string Latitude { get; set; }
 
     [Required]
-    public string Lng { get; set; }
+    public string Longitude { get; set; }
 
     public int? Bearing { get; set; }
 
