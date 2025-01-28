@@ -9,4 +9,5 @@ public sealed class RideEstimativeResult
     public decimal Price { get; set; }
     public decimal Fee { get; set; }
     public string FareID { get; set; }
+    public ProductResult Product { get; set; }
 }
