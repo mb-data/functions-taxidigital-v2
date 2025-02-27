@@ -1,6 +1,6 @@
 ﻿namespace TaxiDigital.Domain.Driver.Results;
 
-public class DriverLogResult
+public sealed class DriverLogResult
 {
     public int RideID { get; set; }
     public int ProviderID { get; set; }

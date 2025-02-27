@@ -39,6 +39,14 @@ public static class DependencyInjection
                 .ConfigureHttpClient(client => client.DefaultRequestHeaders.Add("accept", "application/json"))
                 .ConfigureHttpClient(httpClient => httpClient.BaseAddress = new Uri(Environment.GetEnvironmentVariable("TaxiDigitalURL")));
 
+        services
+                .AddRefitClient<IDriverLogApi>()
+                .ConfigureHttpClient(client => client.DefaultRequestHeaders.Accept.Clear())
+                .ConfigureHttpClient(client => client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json")))
+                .ConfigureHttpClient(client => client.DefaultRequestHeaders.Add("accept", "application/json"))
+                .ConfigureHttpClient(httpClient => httpClient.BaseAddress = new Uri(Environment.GetEnvironmentVariable("wlogapi")))
+                .AddHttpMessageHandler<AddBearerTokenHeader>();
+
         return services;
     }
 }
