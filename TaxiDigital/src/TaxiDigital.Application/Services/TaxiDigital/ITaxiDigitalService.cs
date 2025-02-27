@@ -14,4 +14,5 @@ public interface ITaxiDigitalService
     Task<BookRideResult> BookRide(BookRideRequest request, string TaxiDigitalToken);
     Task<CancelRideResult> CancelRide(CancelRideRequest request, string TaxiDigitalToken);
     Task<RideDetailsResult> RideDetails(RideDetailsRequest request, string TaxiDigitalToken);
+    Task<RideInfoResult> RideInfo(RideInfoRequest request, string TaxiDigitalToken);
 }

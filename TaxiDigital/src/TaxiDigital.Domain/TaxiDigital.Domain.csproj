@@ -7,7 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Notifications\Results\" />
+    <Folder Include="Notification\Results\" />
   </ItemGroup>
 
 </Project>
